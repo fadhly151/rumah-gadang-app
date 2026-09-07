@@ -35,10 +35,9 @@ class DefaultFirebaseOptions {
 
   /// PLACEHOLDER — akan ditimpa otomatis oleh `flutterfire configure`.
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'GANTI_DENGAN_API_KEY_ASLI',
-    appId: 'GANTI_DENGAN_APP_ID_ASLI',
-    messagingSenderId: 'GANTI_DENGAN_SENDER_ID_ASLI',
-    projectId: 'GANTI_DENGAN_PROJECT_ID_ASLI',
-    storageBucket: 'GANTI_DENGAN_STORAGE_BUCKET_ASLI',
-  );
-}
+  apiKey: 'AIzaSyCkUWsL3guvGbnWpiQLsK5CcB-FBNsQ_aI',
+  appId: '1:1043576549950:android:b27b06015ed23c8ab3d76f',
+  messagingSenderId: '1043576549950',
+  projectId: 'rumahgadang',
+  storageBucket: 'rumahgadang.firebasestorage.app',
+);
