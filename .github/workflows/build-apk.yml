@@ -27,13 +27,21 @@ jobs:
           channel: 'stable'
           cache: true
 
-      - name: Scaffold folder android/ jika belum ada
+      - name: Scaffold folder android/ jika belum lengkap
         run: |
-          if [ ! -d "android" ]; then
-            echo "Folder android/ belum ada, generate dengan flutter create..."
+          if [ ! -f "android/app/build.gradle" ]; then
+            echo "android/app/build.gradle belum ada, generate project Android dengan flutter create..."
+            # Simpan dulu google-services.json kalau sudah ada, supaya tidak tertimpa
+            if [ -f "android/app/google-services.json" ]; then
+              mkdir -p /tmp/backup
+              cp android/app/google-services.json /tmp/backup/google-services.json
+            fi
             flutter create --platforms=android --project-name rumah_gadang_app .
+            if [ -f "/tmp/backup/google-services.json" ]; then
+              cp /tmp/backup/google-services.json android/app/google-services.json
+            fi
           else
-            echo "Folder android/ sudah ada (kemungkinan sudah di-setup via flutterfire configure), lanjut."
+            echo "Project Android sudah lengkap, lanjut."
           fi
 
       - name: Install dependencies
@@ -51,3 +59,4 @@ jobs:
         with:
           name: rumah-gadang-app-release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
+          
