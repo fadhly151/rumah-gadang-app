@@ -41,3 +41,4 @@ class DefaultFirebaseOptions {
   projectId: 'rumahgadang',
   storageBucket: 'rumahgadang.firebasestorage.app',
 );
+}
