@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'theme.dart';
+import '../utils/theme.dart';
 
 /// Ikon bendera Marawa: tiga umbul-umbul segitiga berwarna hitam, kuning,
 /// merah — dipakai sebagai elemen branding di splash & login screen
