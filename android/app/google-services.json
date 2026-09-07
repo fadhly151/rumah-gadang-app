@@ -1,1 +1,29 @@
-
+{
+  "project_info": {
+    "project_number": "1043576549950",
+    "project_id": "rumahgadang",
+    "storage_bucket": "rumahgadang.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043576549950:android:b27b06015ed23c8ab3d76f",
+        "android_client_info": {
+          "package_name": "com.balairuangkobana.rumahgadang"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkUWsL3guvGbnWpiQLsK5CcB-FBNsQ_aI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
