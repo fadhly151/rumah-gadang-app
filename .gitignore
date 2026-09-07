@@ -1,0 +1,27 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+pubspec.lock
+
+# Android
+android/.gradle/
+android/local.properties
+android/**/gradle-wrapper.jar
+*.iml
+*.jks
+
+# IDE
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Firebase (JANGAN commit jika repo publik & sensitif; untuk repo pribadi
+# testing biasanya aman dicommit karena hanya berisi konfigurasi klien)
+# android/app/google-services.json
